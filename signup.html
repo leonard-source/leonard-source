@@ -1,0 +1,82 @@
+<DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/static/sign-up.css"/>
+	<title>Register</title>
+</head>
+  <body>
+            <!-- POST -->
+          <form  style="border: fitcontent solid #ccc" method="POST" action="/signup.html">
+            <div class="container">
+              <h1>Sign Up</h1>
+              <p>Please fill in this form to create an account.</p>
+
+              <div>
+            <!-- <label for="Firstname">
+              <b>First name</b>
+            </label>   -->
+            <input class="input" type="text" placeholder="First name" name="Firstname" value="firstname"> 
+            </div>
+            
+            <div>
+              <br>
+            <!-- <label for="Lastname">
+              <b>Last name</b>
+            </label>   -->
+            <input class="input" type="text" placeholder="Last name" name="Lastname" value="lastname"> 
+            </div>
+
+            <div>
+              <br>
+            <!-- <label for="Username">
+              <b>User name</b>
+            </label>   -->
+              <input class="input" type="text" placeholder="Username" name="Username" required="" value="username"> 
+            </div>
+
+            <div><br>
+            <!-- <label for="Email">
+              <b>Email</b>
+            </label>   -->
+              <input class="input" type="Email" placeholder="Email" id="Email"  name="Email" value="email" required> 
+            </div>
+
+            <div><br>
+            <!-- <label for="Password">
+              <b>Password</b>
+            </label>   -->
+              <input class="input" type="Password" placeholder="Password" id="Password"  name="Password" min="8" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+              <div id="my-signin2" class="g-signin2" data-onsuccess="onSignIn" data-theme="dark">
+              <script type="text/javascript" src="/static/login.js/"></script>
+              </div>
+            </div>
+              <div><br>
+            <!-- <label for="ConfirmPassword">
+              <b>Confirm Password</b>
+            </label>   -->
+              <input class="input" type="Password" placeholder="Confirm Password" id="ConfirmPassword" name="Password" min="8" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+              <div id="my-signin2" class="g-signin2" data-onsuccess="onSignup" data-theme="dark"> 
+              </div>
+            </div>
+              
+              <p>By clicking on submit you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a></p>
+
+
+              <div class="clearfix">
+                <button tye="Submit" value="submit" name="submit" class="signupbtn">Submit</button>
+              </div>
+        </div>
+       </form><br>
+       
+        <div>
+        <footer class="container-fluid text-center">
+          <p>Footer Text</p>
+        </footer>
+      </div>
+
+	</body>
+</html>	 
+
+
+
